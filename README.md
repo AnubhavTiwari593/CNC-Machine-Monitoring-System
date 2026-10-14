@@ -144,21 +144,21 @@ http://localhost:5000/swagger/index.html
 
 | Method | Endpoint | Description |
 
-|-----|-------------|--------|
+|--------|-------------|--------|
 
-| GET | `/api/health` | Check API and database health |
+|  GET  | `/api/health` | Check API and database health |
 
-| GET | `/api/machines` | Get all registered machines |
+|  GET  | `/api/machines` | Get all registered machines |
 
-| GET | `/api/machines/{id}` | Get machine details |
+|  GET  | `/api/machines/{id}` | Get machine details |
 
-| GET | `/api/machines/{id}/history` | Get machine status history |
+|  GET  | `/api/machines/{id}/history` | Get machine status history |
 
-| GET | `/api/machines/{id}/production` | Get production records |
+|  GET  | `/api/machines/{id}/production` | Get production records |
 
-| GET | `/api/machines/{id}/alarms` | Get machine alarms |
+|  GET  | `/api/machines/{id}/alarms` | Get machine alarms |
 
-| GET | `/api/downtime` | Get machine downtime summary |
+|  GET  | `/api/downtime` | Get machine downtime summary |
 
 
 
