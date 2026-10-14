@@ -1,4 +1,4 @@
-\# CNC Machine Monitoring System
+# CNC Machine Monitoring System
 
 
 
@@ -10,63 +10,63 @@ Note: This project currently uses simulated machine data. It is not connected to
 
 
 
-\## Features
+## Features
 
 
 
-\- Live machine monitoring dashboard
+- Live machine monitoring dashboard
 
-\- Running, Idle, Stopped, and Alarm status
+- Running, Idle, Stopped, and Alarm status
 
-\- Total, good, and rejected parts tracking
+- Total, good, and rejected parts tracking
 
-\- Machine-wise downtime overview
+- Machine-wise downtime overview
 
-\- REST APIs using ASP.NET Core
+- REST APIs using ASP.NET Core
 
-\- Background telemetry processing
+- Background telemetry processing
 
-\- MySQL database
+- MySQL database
 
-\- Automated tests using xUnit
-
-
-
-\## Technology Stack
+- Automated tests using xUnit
 
 
 
-\- Backend: C#, .NET 9, ASP.NET Core
-
-\- Frontend: React, Vite, CSS
-
-\- Database: MySQL
-
-\- Testing: xUnit
+## Technology Stack
 
 
 
-\## Project Structure
+- Backend: C#, .NET 9, ASP.NET Core
+
+- Frontend: React, Vite, CSS
+
+- Database: MySQL
+
+- Testing: xUnit
 
 
 
-\- src/CncMonitoring.Api — Backend API
-
-\- src/CncMonitoring.Application — Application logic
-
-\- src/CncMonitoring.Domain — Business rules and entities
-
-\- src/CncMonitoring.Infrastructure — Database and simulator
-
-\- src/CncMonitoring.Worker — Background processing
-
-\- frontend — React dashboard
-
-\- tests/CncMonitoring.Tests — Automated tests
+## Project Structure
 
 
 
-\## Run the Backend
+- src/CncMonitoring.Api — Backend API
+
+- src/CncMonitoring.Application — Application logic
+
+- src/CncMonitoring.Domain — Business rules and entities
+
+- src/CncMonitoring.Infrastructure — Database and simulator
+
+- src/CncMonitoring.Worker — Background processing
+
+- frontend — React dashboard
+
+- tests/CncMonitoring.Tests — Automated tests
+
+
+
+## Run the Backend
 
 
 
@@ -98,7 +98,7 @@ Both API and Worker require a valid database connection configured through envir
 
 
 
-\## Run the Frontend
+## Run the Frontend
 
 
 
@@ -126,7 +126,7 @@ http://localhost:5173
 
 
 
-\## API Documentation
+## API Documentation
 
 
 
@@ -138,7 +138,7 @@ http://localhost:5000/swagger/index.html
 
 
 
-\### Available Endpoints
+### Available Endpoints
 
 
 
@@ -162,7 +162,7 @@ http://localhost:5000/swagger/index.html
 
 
 
-\## Build and Run Tests
+## Build and Run Tests
 
 
 
@@ -184,40 +184,38 @@ The current automated test suite covers selected production validation rules, OE
 
 
 
-\## Security
+## Security
 
 
 
-\- Never commit database passwords, API keys, or tokens.
+- Never commit database passwords, API keys, or tokens.
 
-\- Configure local database credentials using environment variables.
+- Configure local database credentials using environment variables.
 
-\- Keep local secrets and generated build files out of version control.
+- Keep local secrets and generated build files out of version control.
 
-\- Use a unique password for the application database user.
-
-
-
-\## Future Improvements
+- Use a unique password for the application database user.
 
 
 
-\- Add API integration tests.
-
-\- Improve alarm and downtime analytics.
-
-\- Add authentication and role-based authorization.
-
-\- Integrate real CNC machines through a supported industrial protocol.
-
-\- Add deployment instructions and dashboard screenshots.
+## Future Improvements
 
 
 
-\## Disclaimer
+- Add API integration tests.
+
+- Improve alarm and downtime analytics.
+
+- Add authentication and role-based authorization.
+
+- Integrate real CNC machines through a supported industrial protocol.
+
+- Add deployment instructions and dashboard screenshots.
+
+
+
+## Disclaimer
 
 
 
 This project currently uses simulated machine telemetry for demonstration and development. It is not connected to physical CNC equipment or a production PLC.
-
-```
