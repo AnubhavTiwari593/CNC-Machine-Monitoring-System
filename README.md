@@ -144,7 +144,7 @@ http://localhost:5000/swagger/index.html
 
 | Method | Endpoint | Description |
 
-|---|---|---|
+|-----|-------------|--------|
 
 | GET | `/api/health` | Check API and database health |
 
