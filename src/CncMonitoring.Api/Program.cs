@@ -2,6 +2,7 @@ using CncMonitoring.Application.Interfaces;
 using CncMonitoring.Application.UseCases;
 using CncMonitoring.Api.Middleware;
 using CncMonitoring.Infrastructure.Extensions;
+using Scalar.AspNetCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -50,7 +51,11 @@ app.UseMiddleware<GlobalExceptionMiddleware>();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.UseSwaggerUI(options => options.SwaggerEndpoint("/openapi/v1.json", "CNC Monitoring API v1"));
+    app.MapScalarApiReference(options =>
+    {
+        options.WithTitle("CNC Monitoring & Production API")
+               .WithTheme(Scalar.AspNetCore.ScalarTheme.DeepSpace);
+    });
 }
 
 app.UseCors("FrontendPolicy");
