@@ -79,6 +79,10 @@ http://localhost:5000/swagger/index.html
 |  GET  | `/api/machines/{id}/production` | Get production records |
 |  GET  | `/api/machines/{id}/alarms` | Get machine alarms |
 |  GET  | `/api/downtime` | Get machine downtime summary |
+|  GET	| `/api/production/summary` |	Get total production and quality rate across all machines
+|  GET	| `/api/reports/production`	|Get date-wise production and downtime reports
+|  GET	| `/api/worker/status`	|Get background worker status exposed by the API
+
 
 ## Build and Run Tests
 
